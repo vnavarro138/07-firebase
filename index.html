@@ -7,52 +7,84 @@
   <!-- call out to style.css file-->
  <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   </head>
 
 <body>
 <!-- Heading -->
 <header>	
-	<h1>
-	Train Scheduler
-	</h1>
+	<h1 style="color: gray; margin-left: 200px;"">Train Scheduler</h1>
 </header>
 
+
 <div id="content">
+<!-- Current train schedule table -->
+<section id = currentTrains>
 
-
-
-<!-- form to be filled out -->\
-<section>
+  <p>Current Train Schedule</p>
+    <form>
+      <div class="row">
+         <div class="col-md-2">
+          <h4 style="font-weight: 700;">Train Name</h4>
+         </div>
+          <div class="col-md-2">
+          <h4 style="font-weight: 700;">Destination</h4>
+         </div>
+         <div class="col-md-2">
+          <h4 style="font-weight: 700;">Frequency (min)</h4>
+         </div>
+         <div class="col-md-2">
+          <h4 style="font-weight: 700;">Next Arrival</h4>
+         </div>
+         <div class="col-md-2">
+          <h4 style="font-weight: 700;"> Minutes Away</h4>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-2">
+          <h4>Thomas</h4>
+         </div>
+          <div class="col-md-2">
+          <h4>Rainbow Station</h4>
+         </div>
+         <div class="col-md-2">
+          <h4>25</h4>
+         </div>
+         <div class="col-md-2">
+          <h4>08:25</h4>
+         </div>
+         <div class="col-md-2">
+          <h4>10</h4>
+         </div>
+      </div>
+    </form>
+</section>
+</div>
+<!-- form to be filled out -->
+<section id = table>
 	<div>
-			<h3>
-		Add Train
-		</h3>
+			<p>Add Train</p>
 		
   	<form>
-    <label for="trainName">Train Name</label>
+    <label for="trainName"><h4>Train Name</h4></label>
     <input type="text" id="trainName">
 
-    <label for="destination">Destination</label>
+    <label for="destination"><h4>Destination</h4></label>
     <input type="text" id="destination">
 
-    <label for="firstTrain">First Train Time (HH:mm - military time)</label>
+    <label for="firstTrain"><h4>First Train Time (HH:mm - military time)</h4></label>
     <input type="text" id="firstTrain">
 
-    <label for="frequency">Frequency (min)</label>
+    <label for="frequency"><h4>Frequency (min)</h4></label>
     <input type="text" id="frequency">
   
-    <input type="submit" id="search" value="Search">
+    <input type="submit" id="submit" value="Submit">
   	</form>
-
-	</div>
-</section>
-<!-- end form here -->
+  </div>
 	
-</div> 
-
-<div id="addedTrains"><p>trains go here...</p>
-</div>
-
+</section>
+<!-- end form here then close out div content -->
+	</div> 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
