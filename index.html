@@ -7,7 +7,13 @@
   <!-- call out to style.css file-->
  <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
   </head>
 
 <body>
@@ -42,19 +48,19 @@
       </div>
       <div class="row">
          <div class="col-md-2">
-          <h4>Thomas</h4>
+          <h4 id = trainName1></h4>
          </div>
           <div class="col-md-2">
-          <h4>Rainbow Station</h4>
+          <h4 id = Destination1></h4>
          </div>
          <div class="col-md-2">
-          <h4>25</h4>
+          <h4 id = frequency1></h4>
          </div>
          <div class="col-md-2">
-          <h4>08:25</h4>
+          <h4 id = nextArrival1></h4>
          </div>
          <div class="col-md-2">
-          <h4>10</h4>
+          <h4 id = minutesAway1></h4>
          </div>
       </div>
     </form>
@@ -78,7 +84,7 @@
     <label for="frequency"><h4>Frequency (min)</h4></label>
     <input type="text" id="frequency">
   
-    <input type="submit" id="submit" value="Submit">
+    <input type="submit" id="submit-train" value="Submit">
   	</form>
   </div>
 	
