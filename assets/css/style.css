@@ -1,92 +1,21 @@
-
-div {
-  background-color: white;
-
+body {
+	margin-left: 20px;
+	margin-right: 20px;
 }
-
-header {
-  width: 100%;
-    height: 78px;
-    position: relative;
-    margin-top: 0px;
-
-}
-h1, h3 {
-  font-family: 'Georgia', Times, Times New Roman, serif;
-}
-h1 {
-    width:70%;
-    height: 400px;
-    background-image: url("../images/thomas.jpg");
-    display:flex;
-    float: left;
-    margin-left: 200px;
-    margin-top: 0px;
-    padding: 20px;
-
-    font-size: 50px;
-
-}
-p {
-  color: white;
-  background-color: #00008B;
-  text-align: left;
-  width: 70%;
-  margin: 0px;
-  padding: 20px;
-  font-size: 30px;
-  font-family: 'Georgia', Times, Times New Roman, serif;
-
-}
-
-section {
-  float:left;
-  margin-left: 200px;
-  margin-top: 0px;
-  margin-right:738px;
-  width: 100%;
-  background-color: white;
-  text-align: left;
-}
-
-form {
-  text-align: left;
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  color: #777777;
-  padding-top: 20px;
-  float:left;
-  margin-left:0px;
-  margin-top: 0px;
-  width: 70%;
-
-}
-
-input{
-  text-align: left; 
-}
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-
-}
-/*submit button styling*/
-input[type=submit] {
-    width: 15%;
-    background-color: gray;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border-radius: 4px;
-    cursor: pointer;
+.jumbotron {
+	background-image: url("images/train.jpg");
+	background-size: 100% 100%;
+    height:380px;
     text-align: center;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+label {
+	margin: 5px 0px;
 }
 
-table, td {
-    border: 1px solid gray;
+.form-group {
+	margin: 2%;
+}
+
+.panel-default {
+	background: lightgrey;
 }
